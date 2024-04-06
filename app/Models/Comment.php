@@ -9,5 +9,10 @@ class Comment extends Model
 {
     use HasFactory;
 
-    
+    public $fillable = [
+        'post_id',
+        'comment',
+    ];
+
+
 }
