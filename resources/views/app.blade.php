@@ -8,16 +8,17 @@
     <!-- CSS only -->
     <link href="{{ asset('bootstrap/bootstrap.min.css') }}" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+
 </head>
 <body>
     <div class="container">
         <!-- Header view -->
-        @include('app.header')
+        @include('layouts.header')
         <div>
             @yield('content')
         </div>
         <!-- Footer view -->
-        @include('app.footer')
+        @include('layouts.footer')
     </div>
 </body>
 </html>
